@@ -52,3 +52,5 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'simple_form'
+
+gem 'devise'
