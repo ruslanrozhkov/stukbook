@@ -5,11 +5,11 @@ class Post < ApplicationRecord
   validates_presence_of :content
 
   FORMAT = AutoHtml::Pipeline.new(
-      AutoHtml::HtmlEscape.new,
-      AutoHtml::SimpleFormat.new,
+      AutoHtml::YouTube.new(width: '100%', height: 250),
       AutoHtml::Image.new,
       AutoHtml::Link.new,
-      AutoHtml::YouTube.new(width: '100%', height: 250, autoplay: false)
+      AutoHtml::HtmlEscape.new,
+      AutoHtml::SimpleFormat.new
   )
 
   def content=(c)
