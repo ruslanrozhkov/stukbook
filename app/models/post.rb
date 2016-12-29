@@ -8,7 +8,6 @@ class Post < ApplicationRecord
       AutoHtml::YouTube.new(width: '100%', height: 250),
       AutoHtml::Image.new,
       AutoHtml::Link.new,
-      AutoHtml::HtmlEscape.new,
       AutoHtml::SimpleFormat.new
   )
 
